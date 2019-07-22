@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: heroku
+
+
+
+  ################################################
+  application:
+    name: Shop Demo
+  mail:
+    host: smtp.gmail.com
+    username: linhlantrang080@gmail.com
+    password: ytbykzpzhsvgapge
+
+    port: 587
+    properties.mail.smtp.starttls.enable: true
+################################################
+server:
+  port: 8080
+  use-forward-headers: true
+
+app:
+  jwtSecret: E286115114967D4F9A82BF2C292E4
+  jwtExpirationInMs: 604800000
